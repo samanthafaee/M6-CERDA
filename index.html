@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-wiwdth, initial-scale=1">
+        <title>Electric Pulse Portfolio</title>
+        
+        <script src="js/theme-init.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/app.js" defer></script>
+    </head>
+
+    <body>
+        <header class="topbar">
+            <a href="#home" class="logo">
+                <span class="logo-icon">+</span>
+                ELECTRIC PULSE
+            </a>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="#home">HOME</a>
+                <a href="#work">WORK</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+
+            <button
+                id="theme-toggle"
+                class="theme-button"
+                type="button"
+                aria-label="Switch website theme">
+                DARK MODE
+            </button>
+        </header>
+
+        <main>
+            <section id="home" class="hero layout-container">
+                <div class="hero-text">
+                    <p class="section-label">SYSTEM ONLINE // CREATIVE PORTFOLIO</p>
+
+                    <h1>
+                        DIGITAL
+                        <span>ENERGY</span>
+                        ACTIVATED.
+                    </h1>
+
+                    <p class="intro-text">
+                        I build visual concepts, interactive websites, and digital
+                        experiences powered by creativity and technology.
+                    </p>
+
+                    <p
+                        id="welcome-message"
+                        class="welcome-text"
+                        aria-live="polite">
+                    </p>
+
+                    <a href="#work" class="main-button">
+                        EXPLORE WORK
+                    </a>
+                </div>
+
+                <div class="energy-core" aria-hidden="true">
+                    <div class="core-circle">+</div>
+                </div>
+            </section>
+
+            <section id="#work" class="layout-container work-section">
+                <div class="headong-block">
+                    <p class="section-label">DIGITAL PROJECTS // 001-003</p>
+                    <h2>SELECTED WORK</h2>
+                </div>
+
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="card-number">01</div>
+                        <p class="card-category">ANIMATION</p>
+                        <p>
+                            A frame-by-frame animation project baased on movement, timing,
+                            expression, and visual rhythm.
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="card-number">02</div>
+                        <p class="card-category">WEB DESIGN</p>
+                        <h3>Neon Interface</h3>
+                        <p>
+                            a responsive interface designed with interactive components,
+                            clear navigation, and a futurustic visual system.
+                        </p>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="card-number">03</div>
+                        <p class="card-category">FILM CONCEPT</p>
+                        <h3>Afterlight</h3>
+                        <p>
+                            a cinematic concept that explores color, atmosphre, lighting,
+                            and storytelling through visual composition.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section layout-container">
+                <div class="contact-information">
+                    <p class="section-label">CONNECTION TERMINAL</p>
+                    
+                    <h2>IDENTIFY YOURSELF</h2>
+
+                    <p>
+                        Enter your name to personalize the experience. The browser will
+                        remember your name, selected theme, and most recent visit.
+                    </p>
+                </div>
+
+                <form id="visitor-form" class="visitor-form" novalidate>
+                    <label for="visitor-name">VISITOR NAME</label>
+                    
+                    <div class="input-group">
+                        <input
+                            id="visitor-name"
+                            name="visitorName"
+                            type="text"
+                            maxlength="60"
+                            autocomplete="name"
+                            placeholder="Type your name"
+                            required
+                        >
+
+                        <button class="main-button" type="submit">
+                            SAVE DATA 
+                        </button>
+                    </div>
+
+                    <p 
+                        id="form-message"
+                        class="form-status"
+                        aria-live="polite">
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer layout-container">
+            <span>ELECTRIC PULSE SYSTEM // 2026</span>
+            <span id="last-visit" aria-live="polite"></span>
+        </footer>
+    </body>
+</html>
